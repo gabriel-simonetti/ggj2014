@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>controlesMovimento</name>
+    <events>
+        <variable constant="0" name="destinoY" sid="6987762324654642" static="0" type="number">0</variable>
+        <variable constant="0" name="destinoX" sid="2456259708644161" static="0" type="number">0</variable>
+        <event-block sid="8077878850556392">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1689907213416118" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">PontosDeInteresse</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9174565290634622" type="System">
+                    <param id="0" name="Variable">destinoX</param>
+                    <param id="1" name="Value">PontosDeInteresse.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="994881745736099" type="System">
+                    <param id="0" name="Variable">destinoY</param>
+                    <param id="1" name="Value">PontosDeInteresse.Y</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="3131426429774824" type="Personagens">
+                    <param id="0" name="X">destinoX</param>
+                    <param id="1" name="Y">destinoY</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="4633504380308327" type="PontosDeInteresse">
+                    <param id="0" name="Instance variable">selecionado</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7149034124509285">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="1784296307983465" type="Personagens">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">Mouse.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="8598743365698965" type="Personagens">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5445057293569621">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7908039423193643" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="7417153928609185" type="Personagens">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7811946880819017">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5226575152520752" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="3355356489124057" type="portal">
+                    <param id="0" name="Instance variable">portalSelecionado</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5764772455533334">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="9286556277508773" type="Personagens" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="7657890513327486" type="Personagens" />
+            </actions>
+        </event-block>
+        <event-block sid="4487238889429059">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="9522541389062532" type="Personagens" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="2" name="Stop" sid="6000276439070115" type="Personagens" />
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="3341355276545099">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="3478424155608289" type="Mouse">
+                    <param id="0" name="Object">PontosDeInteresse</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="2280419549531323" type="PontosDeInteresse">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="101277514969721">
+            <conditions>
+                <condition id="-22" name="Else" sid="1377298515298621" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3328184570639937" type="PontosDeInteresse">
+                    <param id="0" name="Opacity">25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="9682992674454996">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9742412414421286" type="Mouse">
+                    <param id="0" name="Object">item</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="392607178837336" type="item">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="2422855859795692">
+            <conditions>
+                <condition id="-22" name="Else" sid="6021189410340549" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="7398025601484769" type="item">
+                    <param id="0" name="Opacity">25</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>bola</comment>
+        <event-block sid="6027056801898517">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7137971918630918" type="personagem">
+                    <param id="0" name="Object">bola</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="3424769917236696" type="bola">
+                    <param id="0" name="Instance variable">selecionado</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5931860254147658" type="System">
+                    <param id="0" name="Variable">realidade</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;crianca&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4470865658926951" type="System">
+                    <param id="0" name="Variable">desafio</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1739636879159351" type="bola">
+                    <param id="0" name="Animation">realidade&amp;&quot;_quicando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="8Direction" id="10" name="Set vector Y" sid="4282540495841283" type="bola">
+                    <param id="0" name="Vector Y">270</param>
+                </action>
+                <action id="-9" name="Set value" sid="7880604457829626" type="System">
+                    <param id="0" name="Variable">desafio</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4563716689099935">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="6577958809483622" type="bola">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">personagem.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="9" name="Set vector X" sid="9292274905815969" type="bola">
+                            <param id="0" name="Vector X">400</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9008207831262998">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="250645838189298" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="9" name="Set vector X" sid="6590249745017251" type="bola">
+                            <param id="0" name="Vector X">-400</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6803479663921262">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2940091167107059" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6686724430077578" type="bola">
+                    <param id="0" name="Animation">realidade&amp;&quot;_parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>animacao</comment>
+        <event-block sid="2323784811890718">
+            <conditions>
+                <condition id="2" inverted="1" name="Is playing" sid="2502594853121339" type="Personagens">
+                    <param id="0" name="Animation">&quot;crianca_pogo&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="345622411898731">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="6" name="Compare speed" sid="9762580541464544" type="Personagens">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Speed">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9999375805650596" type="Personagens">
+                            <param id="0" name="Animation">realidade&amp;&quot;_andar&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8227992443563099">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4116314059189464" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7570165210288547" type="Personagens">
+                            <param id="0" name="Animation">realidade&amp;&quot;_parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9873769116758931">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9824349169200712" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">pontoDeInteresse</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="6801186621908059" type="PontosDeInteresse">
+                    <param id="0" name="Instance variable">selecionado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="2064425459683738" type="pontoDeInteresse">
+                    <param id="0" name="Instance variable">selecionado</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

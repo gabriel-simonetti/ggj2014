@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>itens</name>
+    <events>
+        <event-block sid="7823295214059836">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="3882857150711943" type="Personagens">
+                    <param id="0" name="Object">item</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="88799813069759" type="item">
+                    <param id="0" name="Instance variable">selecionado</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1061821350224083" type="item">
+                    <param id="0" name="Instance variable">nome</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;carro&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1663937362036826" type="System">
+                    <param id="0" name="Variable">desafio</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="5910393382795843" type="PontosDeInteresse">
+                    <param id="0" name="Instance variable">selecionado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="5556253970007759" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="7128003443903827" type="System">
+                    <param id="0" name="Variable">dialogoAberto</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="1989166757368284" type="textoDialogo">
+                    <param id="0" name="Text">&quot;Damn, it looks like my tires are flat!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="1868961829651431" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="8058778889588955" type="System">
+                    <param id="0" name="Variable">dialogoAberto</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="9928882511655876" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2922983083537607">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1316841930303073" type="Personagens">
+                    <param id="0" name="Object">item</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="9692966828845557" type="item">
+                    <param id="0" name="Instance variable">selecionado</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7587524887680876" type="item">
+                    <param id="0" name="Instance variable">nome</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;carro&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="156229874907676" type="System">
+                    <param id="0" name="Variable">desafio</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="2755633568859443" type="PontosDeInteresse">
+                    <param id="0" name="Instance variable">selecionado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="4415892750405554" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6455459226439636" type="System">
+                    <param id="0" name="Variable">proximoCenario</param>
+                    <param id="1" name="Value">&quot;final&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="8999062796113082" type="System">
+                    <param id="0" name="Variable">transitionState</param>
+                    <param id="1" name="Value">&quot;FadeOut&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="8954951633965097" type="System">
+                    <param id="0" name="Variable">transitioning</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="6853556431783853" type="System">
+                    <param id="0" name="Variable">dialogoAberto</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="1305894161448401" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3068503281063125" type="MatarNoFim" />
+            </actions>
+        </event-block>
+        <event-block sid="3523719506291507">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2112160825869724" type="Personagens">
+                    <param id="0" name="Object">item</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="5975007027516306" type="item">
+                    <param id="0" name="Instance variable">selecionado</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5369986193439566" type="item">
+                    <param id="0" name="Instance variable">nome</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;guardaChuva&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5408952119210294" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6763033248241123" type="System">
+                    <param id="0" name="Variable">dialogoAberto</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="1332795694304951" type="textoDialogo">
+                    <param id="0" name="Text">&quot;There&apos;s nothing here but my umbrella.&#x0D;&#x0A;What am I supposed to do with it?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="1050161657361211" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="6864646278889075" type="System">
+                    <param id="0" name="Variable">dialogoAberto</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="8324760106663361" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4397780254090694">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2303858538391003" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">item</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8341875698525795" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5410405600451735">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1081533391807844" type="System">
+                            <param id="0" name="Variable">desafio</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="2849202478608819" type="item">
+                            <param id="0" name="Instance variable">nome</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;ioio&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="4278905166353084">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="1041528277078937" type="item">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">personagem.X+50</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="7702818098464123" type="item">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">personagem.X-50</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="3149322553105369" type="item">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">personagem.Y-200</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Push" sid="3381721064122677" type="listaInventario">
+                                    <param id="0" name="Where">0</param>
+                                    <param id="1" name="Value">item.nome</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="2604683162186768" type="System">
+                                    <param id="0" name="Object to create">itemInventario</param>
+                                    <param id="1" name="Layer">&quot;personagem&quot;</param>
+                                    <param id="2" name="X">987-64</param>
+                                    <param id="3" name="Y">48+48*personagem.contadorItens</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="2338021281300072" type="personagem">
+                                    <param id="0" name="Instance variable">contadorItens</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="9013254573553316" type="itemInventario">
+                                    <param id="0" name="Animation">realidade&amp;&quot;_&quot;&amp;item.nome</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5925715369711473" type="itemInventario">
+                                    <param id="0" name="Instance variable">nome</param>
+                                    <param id="1" name="Value">item.nome</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="9580026346985204" type="item" />
+                                <action id="-13" name="Set boolean" sid="6229094572223624" type="item">
+                                    <param id="0" name="Instance variable">selecionado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="7812665783523274" type="System">
+                                    <param id="0" name="Variable">podeClicar</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="521212149633919" type="System">
+                                    <param id="0" name="Variable">dialogoAberto</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="2034494829116583" type="textoDialogo">
+                                    <param id="0" name="Text">&quot;Sweet, I got my yo-yo back!&#x0D;&#x0A;But it&apos;s tangled and I can&apos;t untie it.&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="1122362897955489" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1064894164119091" type="System">
+                                    <param id="0" name="Variable">dialogoAberto</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2236457212200772" type="System">
+                                    <param id="0" name="Variable">podeClicar</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2401106713034765">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="1841393508453865" type="System" />
+                                <condition id="2" inverted="1" name="Is playing" sid="8462101305286593" type="personagem">
+                                    <param id="0" name="Animation">&quot;crianca_pogo&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2283414603808566" type="System">
+                                    <param id="0" name="Variable">podeClicar</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="158913648955431" type="System">
+                                    <param id="0" name="Variable">dialogoAberto</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="8412638858012292" type="textoDialogo">
+                                    <param id="0" name="Text">&quot;Oh no, my yo-yo! I can&apos;t reach it!&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="4742538314985742" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2746061175427945" type="System">
+                                    <param id="0" name="Variable">dialogoAberto</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="4892090091380493" type="System">
+                                    <param id="0" name="Variable">podeClicar</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>inventario</comment>
+        <event-block sid="1494921497315139">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7664816277388476" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">itemInventario</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="807115721550365" type="itemInventario">
+                    <param id="0" name="Instance variable">nome</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;guardaChuva&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8926543630161089" type="System">
+                    <param id="0" name="Variable">realidade</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;crianca&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7393035790098012">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="7255182839551076" type="personagem">
+                            <param id="0" name="Animation">&quot;crianca_pogo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="9482439424715768" type="System">
+                            <param id="0" name="Variable">podeClicar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="7735546515877966" type="personagem">
+                            <param id="0" name="Animation">&quot;crianca_parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4927858600146365" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7740125111050826" type="System">
+                            <param id="0" name="Variable">dialogoAberto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9102219953315836" type="System">
+                            <param id="0" name="Variable">podeClicar</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9191572768411642">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6482504758618754" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5562303780053033" type="System">
+                            <param id="0" name="Variable">podeClicar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="3729381711123286" type="personagem">
+                            <param id="0" name="Animation">&quot;crianca_pogo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="740191200746279" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3037563740849706" type="System">
+                            <param id="0" name="Variable">dialogoAberto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5774256818540662" type="System">
+                            <param id="0" name="Variable">podeClicar</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7638602119149725">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9942518589992146" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">itemInventario</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="330690605832532" type="itemInventario">
+                    <param id="0" name="Instance variable">nome</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;ioio&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4952607287261773" type="System">
+                    <param id="0" name="Variable">realidade</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;adulto&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5983081404493716" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2500097686753815" type="System">
+                    <param id="0" name="Variable">dialogoAberto</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="8496980381461054" type="textoDialogo">
+                    <param id="0" name="Text">&quot;What? Is it that late already?&#x0D;&#x0A;I must find something to fix this car right now!&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="3101054983645527" type="System">
+                    <param id="0" name="Variable">desafio</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-16" name="Wait" sid="382001827907682" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="15565315333449" type="System">
+                    <param id="0" name="Variable">dialogoAberto</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2469074920404456" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5162053720407353">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6974125174302281" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">itemInventario</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7155498442046647" type="itemInventario">
+                    <param id="0" name="Instance variable">nome</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;graveto&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9024813799759335" type="System">
+                    <param id="0" name="Variable">realidade</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;adulto&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5471202286905982" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="1878854699593635" type="System">
+                    <param id="0" name="Variable">dialogoAberto</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="1452072227855802" type="textoDialogo">
+                    <param id="0" name="Text">&quot;This lug wrench will do, I guess...&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="8388968143129678" type="System">
+                    <param id="0" name="Variable">desafio</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-16" name="Wait" sid="6719444103237947" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="1613324140158037" type="System">
+                    <param id="0" name="Variable">dialogoAberto</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="7213316633860445" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

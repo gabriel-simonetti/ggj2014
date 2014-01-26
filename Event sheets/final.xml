@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>final</name>
+    <events>
+        <event-block sid="9586331430978214">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8808698425059889" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="9727732980206986" type="pogoBoy">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="7540008090293528">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="8188939206136558" type="pogoBoy" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2268575058110767" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="3735250541089291" type="System">
+                    <param id="0" name="Variable">proximoCenario</param>
+                    <param id="1" name="Value">&quot;inicio&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="783174093731111" type="System">
+                    <param id="0" name="Variable">transitionState</param>
+                    <param id="1" name="Value">&quot;FadeOut&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="9226822605217719" type="System">
+                    <param id="0" name="Variable">transitioning</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4391540981552402" type="System">
+                    <param id="0" name="Variable">dialogoAberto</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="1548830996623769" type="System">
+                    <param id="0" name="Variable">podeClicar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-37" name="Load" sid="3851967685079837" type="System">
+                    <param id="0" name="Slot">&quot;mysave&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <include>transition</include>
+    </events>
+</c2eventsheet>
