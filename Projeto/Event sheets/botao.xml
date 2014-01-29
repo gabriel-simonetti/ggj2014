@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>botao</name>
+    <events>
+        <event-block sid="5413952199869554">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9969249500785979" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">botao</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="849067841865477" type="System">
+                    <param id="0" name="Layout">botao.destino</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8114931279334864">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="5615557009130366" type="Mouse">
+                    <param id="0" name="Object">botao</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="1048958822574178" type="botao">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3580158786755243">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8003958529195343" type="Mouse">
+                    <param id="0" name="Object">botao</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="1002446326996835" type="botao">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

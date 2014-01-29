@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>inicio</name>
+    <events>
+        <variable constant="0" name="podeClicar" sid="9616704698116244" static="0" type="number">1</variable>
+        <variable constant="0" name="realidade" sid="7530658631008248" static="0" type="text">adulto</variable>
+        <variable constant="0" name="proximoCenario" sid="8635992150009294" static="0" type="text">cenario01</variable>
+        <include>transition</include>
+        <variable constant="0" name="transitioning" sid="156585586615273" static="0" type="number">0</variable>
+        <variable constant="0" name="transitionState" sid="7068948249168373" static="0" type="text">FadeIn</variable>
+        <variable constant="0" name="luminosity" sid="8093772806038656" static="0" type="number">0</variable>
+        <include>botao</include>
+        <event-block sid="2831581349001874">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2827127543582739" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8041137095808409" type="System">
+                    <param id="0" name="Variable">proximoCenario</param>
+                    <param id="1" name="Value">&quot;cenario01&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="7075311329693109" type="System">
+                    <param id="0" name="Variable">realidade</param>
+                    <param id="1" name="Value">&quot;adulto&quot;</param>
+                </action>
+                <action id="-36" name="Save" sid="5949928488057971" type="System">
+                    <param id="0" name="Slot">&quot;mysave&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
